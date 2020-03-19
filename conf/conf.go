@@ -2,9 +2,9 @@ package conf
 
 import (
 	"os"
-	"singo/cache"
-	"singo/model"
-	"singo/util"
+	"giligili/cache"
+	"giligili/model"
+	"giligili/util"
 
 	"github.com/joho/godotenv"
 )

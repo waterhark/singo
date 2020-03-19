@@ -1,0 +1,12 @@
+version: '3'
+services:
+  giligili:
+    image: golang:latest
+    container_name: giligili
+    expose:
+    - "80"
+    environment:
+    - VIRTUAL_HOST=sjs.ngrok.hanwide.com
+    volumes:
+      - ./:/go/src/
+    network_mode: docker_network
