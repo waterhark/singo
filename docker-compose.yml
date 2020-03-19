@@ -7,6 +7,8 @@ services:
     - "80"
     environment:
     - VIRTUAL_HOST=sjs.ngrok.hanwide.com
+    - GOPROXY=http://mirrors.aliyun.com/goproxy/
     volumes:
-      - ./:/go/src/
+      - ./:/go/src/giligili
+    command: go run /go/src/giligili/main.go
     network_mode: docker_network
