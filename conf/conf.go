@@ -1,10 +1,10 @@
 package conf
 
 import (
-	"giligili/cache"
-	"giligili/model"
-	"giligili/util"
 	"os"
+	"singo/cache"
+	"singo/model"
+	"singo/util"
 
 	"github.com/joho/godotenv"
 )
@@ -12,13 +12,13 @@ import (
 // Init 初始化配置项
 func Init() {
 	// 从本地读取环境变量
-	godotenv.Load("/go/src/giligili/.env")
+	godotenv.Load("/go/src/singo/.env")
 
 	// 设置日志级别
 	util.BuildLogger(os.Getenv("LOG_LEVEL"))
 
 	// 读取翻译文件
-	if err := LoadLocales("/go/src/giligili/conf/locales/zh-cn.yaml"); err != nil {
+	if err := LoadLocales("/go/src/singo/conf/locales/zh-cn.yaml"); err != nil {
 		util.Log().Panic("翻译文件加载失败", err)
 	}
 

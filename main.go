@@ -1,8 +1,8 @@
 package main
 
 import (
-	"giligili/conf"
-	"giligili/server"
+	"singo/conf"
+	"singo/server"
 )
 
 func main() {

@@ -1,8 +1,8 @@
 package service
 
 import (
-	"giligili/model"
-	"giligili/serializer"
+	"singo/model"
+	"singo/serializer"
 )
 
 // UserRegisterService 管理用户注册服务

@@ -1,7 +1,7 @@
 package model
 
 import (
-	"giligili/util"
+	"singo/util"
 	"time"
 
 	"github.com/jinzhu/gorm"

@@ -1,8 +1,8 @@
 version: '3'
 services:
-  giligili:
+  singo:
     image: golang:latest
-    container_name: giligili
+    container_name: singo
     expose:
     - "80"
     environment:
@@ -10,6 +10,6 @@ services:
     - GOPROXY=http://mirrors.aliyun.com/goproxy/
     - GO111MODOLE=on
     volumes:
-      - ./:/go/src/giligili
-    command: go run /go/src/giligili/main.go
+      - ./:/go/src/singo
+    command: go run /go/src/singo/main.go
     network_mode: docker_network

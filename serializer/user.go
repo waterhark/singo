@@ -1,6 +1,6 @@
 package serializer
 
-import "giligili/model"
+import "singo/model"
 
 // User 用户序列化器
 type User struct {

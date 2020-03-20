@@ -1,4 +1,4 @@
-module giligili
+module singo
 
 go 1.12
 

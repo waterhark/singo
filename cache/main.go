@@ -2,7 +2,7 @@ package cache
 
 import (
 	"os"
-	"giligili/util"
+	"singo/util"
 	"strconv"
 
 	"github.com/go-redis/redis"
