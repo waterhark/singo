@@ -9,13 +9,6 @@ services:
     - VIRTUAL_HOST=sjs.ngrok.hanwide.com
     - GOPROXY=http://mirrors.aliyun.com/goproxy/
     - GO111MODOLE=on
-    - MYSQL_DSN="root:root@tcp(mysql)/giligili?charset=utf8mb4&parseTime=True&loc=Local"
-    - REDIS_ADDR="127.0.0.1:6379"
-    - REDIS_PW=""
-    - REDIS_DB=""
-    - SESSION_SECRET="setOnProducation"
-    - GIN_MODE="debug"
-    - LOG_LEVEL="debug"
     volumes:
       - ./:/go/src/giligili
     command: go run /go/src/giligili/main.go
